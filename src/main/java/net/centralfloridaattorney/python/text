@@ -1,0 +1,61 @@
+#jupyter notebook --notebook-dir=D:\Projects\TitleMaster\src\main\java\net\centralfloridaattorney\python\JavaBridge.ipynb
+
+import numpy as np
+
+from qiskit import QuantumCircuit, QuantumRegister, ClassicalRegister
+from qiskit import Aer, execute
+from qiskit.tools.visualization import plot_histogram
+
+from qiskit.providers.aer import QasmSimulator
+
+qr = QuantumRegister(2, 'qr')
+cr = ClassicalRegister(2, 'cr')
+circ = QuantumCircuit(qr, cr)
+circ.h(qr[0])
+circ.cx(qr[0], qr[1])
+circ.measure(qr, cr)
+
+
+simulator = Aer.get_backend('qasm_simulator')
+
+
+result = execute(circ, simulator).result()
+counts = result.get_counts(circ)
+plot_histogram(counts, title='Bell-State counts')
+
+
+# Construct quantum circuit
+qr = QuantumRegister(2, 'qr')
+cr = ClassicalRegister(2, 'cr')
+circ = QuantumCircuit(qr, cr)
+circ.h(qr[0])
+circ.cx(qr[0], qr[1])
+circ.measure(qr, cr)
+
+# Select the QasmSimulator from the Aer provider
+simulator = Aer.get_backend('qasm_simulator')
+
+# Execute and get memory
+result = execute(circ, simulator, shots=10, memory=True).result()
+memory = result.get_memory(circ)
+print(memory)
+
+# Construct an empty quantum circuit
+qr = QuantumRegister(2)
+cr = ClassicalRegister(2)
+circ = QuantumCircuit(qr, cr)
+circ.measure(qr, cr)
+
+# Set the initial state
+opts = {"initial_statevector": np.array([1, 0, 0, 1] / np.sqrt(2))}
+
+# Select the QasmSimulator from the Aer provider
+simulator = Aer.get_backend('qasm_simulator')
+
+# Execute and get counts
+result = execute(circ, simulator, backend_options=opts).result()
+counts = result.get_counts(circ)
+plot_histogram(counts, title="Bell initial statevector")
+
+
+
