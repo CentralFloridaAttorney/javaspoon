@@ -40,7 +40,7 @@ a tool for using data
   <p align="center">
     a tool for working with data
     <br />
-    <a href="https://github.com/CentralFloridaAttorney/dataspoon/wiki"><strong>Explore the Wiki»</strong></a>
+    <a href="https://github.com/CentralFloridaAttorney/javaspoon/wiki"><strong>Explore the Wiki»</strong></a>
     <br />
     <a href="https://github.com/CentralFloridaAttorney/javaspoon">View Demo | </a>
     <a href="https://github.com/CentralFloridaAttorney/javaspoon/issues">Report Bug | </a>
