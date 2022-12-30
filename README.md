@@ -27,15 +27,13 @@ a tool for using data
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-
-
 # Why use javaspoon?
 
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/CentralFloridaAttorney/dbtool">
+  <a href="https://github.com/CentralFloridaAttorney/javaspoon">
     <img src="src/main/resources/jpg/javaspoon.png" alt="Logo" width="1280" height="480">
   </a>
 <h3 align="center">javaspoon</h3>
@@ -49,6 +47,7 @@ a tool for using data
     <a href="https://github.com/CentralFloridaAttorney/javaspoon/issues">Request Feature</a>
   </p>
 </div>
+
 [![Product Name Screen Shot][product-screenshot]](https://CentralFloridaAttorney.net)
 
 
