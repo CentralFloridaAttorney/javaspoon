@@ -18,6 +18,9 @@ public class H2Tool {
     String tableName;
     String[] keys;
 
+    /**
+     * H2Tool is a tool to operate H2 databases in java. to start workbench: ~/h2/h2/bin/h2.sh
+     */
     protected H2Tool() {
         try {
             Class.forName("org.h2.Driver");
@@ -58,6 +61,9 @@ public class H2Tool {
         }
     }
 
+    /**
+     * H2Tool.init_destructive() deletes and recreates the h2tool database
+     */
     public void init_destructive() {
         DeleteDbFiles.execute("~/h2", "h2Tool", true);
         keys = new String[1];
