@@ -26,10 +26,10 @@ a tool for using data
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
 
-# Why use dataspoon?
+
+# Why use javaspoon?
 
 
 <!-- PROJECT LOGO -->
@@ -54,17 +54,15 @@ a tool for using data
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/CentralFloridaAttorney/dbtool.svg?style=for-the-badge
-[contributors-url]: https://github.com/CentralFloridaAttorney/dbtool/graphs/contributors
+[contributors-shield]: https://img.shields.io/github/contributors/CentralFloridaAttorney/javaspoon.svg?style=for-the-badge
+[contributors-url]: https://github.com/CentralFloridaAttorney/javaspoon/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/CentralFloridaAttorney/dbtool.svg?style=for-the-badge
-[forks-url]: https://github.com/CentralFloridaAttorney/dbtool/network/members
-[stars-shield]: https://img.shields.io/github/stars/CentralFloridaAttorney/dbtool.svg?style=for-the-badge
-[stars-url]: https://github.com/CentralFloridaAttorney/dbtool/stargazers
-[issues-shield]: https://img.shields.io/github/issues/CentralFloridaAttorney/dbtool.svg?style=for-the-badge
-[issues-url]: https://github.com/CentralFloridaAttorney/dbtool/issues
-[license-shield]: https://img.shields.io/github/license/CentralFloridaAttorney/dbtool.svg?style=for-the-badge
-[license-url]: https://github.com/CentralFloridaAttorney/dbtool/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[forks-url]: https://github.com/CentralFloridaAttorney/javaspoon/network/members
+[stars-shield]: https://img.shields.io/github/stars/CentralFloridaAttorney/javaspoon.svg?style=for-the-badge
+[stars-url]: https://github.com/CentralFloridaAttorney/javaspoon/stargazers
+[issues-shield]: https://img.shields.io/github/issues/CentralFloridaAttorney/javaspoon.svg?style=for-the-badge
+[issues-url]: https://github.com/CentralFloridaAttorney/javaspoon/issues
+[license-shield]: https://img.shields.io/github/license/CentralFloridaAttorney/javaspoon.svg?style=for-the-badge
 [linkedin-url]:https://www.linkedin.com/in/john-m-iriye-3136478
 [product-screenshot]: src/main/resources/jpg/javaspoon.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
