@@ -92,85 +92,20 @@
 
 ### javaspoon helps you to eat more data
 
-javaspoon() allows you to create and modify MySQL databases using Python with simple get and put commands.
-
-For example, you can set and get a key/value pair to ('ala'/'kazam') in a row that is referenced by the link_key ('xyzzy'):
-
-````
-javaspoon().put('xyzzy', 'ala', 'kazam')
-value = javaspoon().get('xyzzy', 'ala')
-````
-To perform the same operation in a different database ('magicdb'):
-````
-javaspoon('magicdb').put('xyzzy', 'ala', 'kazam')
-value = javaspoon('magicdb').get('xyzzy', 'ala')
-````
-
-### onehotdb makes data taste better
-
-
-
-And, to perform the same operation in a different database ('magic_carpet') and a different table ('magic_table')
-````
-javaspoon('magicdb', 'magic_table').put('xyzzy', 'ala', 'kazam')
-value = javaspoon('magicdb', 'magic_table').get('xyzzy', 'ala')
-````
-
-
-javaspoon allows you to create and use MySQL databases in Python with simple get and put commands.
-````
-    def put(self, _link_key, _key_value=None, _value=None):
-        # returns row_number of _link_key
-        # 1 value: new_link_key
-        # 2 value: old_link_key_value, new_link_key_value
-        # 3 value: link_key, key, value
-````
-
-
-azxf
-
-
-````
-    xyzzydb = javaspoon() creates a database named javaspoon with table named default_table.
-    xyzzydb = javaspoon('xyzzydb') creates a database named xyzzydb with a table named default_table.
-    xyzzydb = javaspoon('xyzzydb', 'best_magic_table') creates a database named xyzzydb with a table named best_magic_table.
-    xyzzydb.put('link_key_xyzzy') creates a row with link_key ('link_key_xyzzy')
-    xyzzydb.put('link_key_xyzzy', 'revised_link_key_xyzzy') changes the link_key for link_key ('link_key_xyzzy') to link_key ('revised_link_key_xyzzy')
-    xyzzydb.put('revised_link_key_xyzzy', 'ala', 'kazam') sets key ('ala') to value ('kazam') in row with link_key ('revised_link_key_xyzzy')
-    
-    1. Create a database ('xyzzydb', 'magic_table'): xyzzydb = javaspoon('xyzzydb', 'magic_table').  The MySQL.table_name is a default name, unless you specify a table_name during creation (ex. xyzzydb = javaspoon('xyzzydb', 'magic_table')) or after creation (ex. xyzzydb.open_table('new_magic_table'))
-    2. Create a new record with a link_key ('link_key_xyzzy'): xyzzydb.put('link_key_xyzzy')
-    3. Revise an existing link_key ('revised_link_key_xyzzy'): xyzzydb.put('link_key_xyzzy', 'revised_link_key_xyzzy')
-    4. Put key/value ('ala'/'kazam') into row with link_key ('revised_link_key_xyzzy'): xyzzydb.put('revised_link_key_xyzzy', 'ala', 'kazam')
-    5. Get this_value ('kazam') using key ('ala') from row with link_key value ('revised_link_key_xyzzy'): this_value = xyzzydb.get('revised_link_key_xyzzy', 'ala')
-    6. Save xyzzydb.magic_table as a pandas.DataFrame .pkl file ('data/mysql.pkl'): xyzzydb.to_pickle('data/mysql.pkl')
-````
-### javaspoon.OneHotWords()
-
-onehotdb builds upon javaspoon and instead of storing the value, onehotdb splits the value into smaller parts or words and stores the smaller parts in a database of words.  The indices to those words are stored in onehotdb.
-
 ### Prerequisites
 
-1. Install MySQL:
+1. Install H2:
 ````
-sudo rm -rf /var/lib/mysql/mysql
-sudo apt-get remove --purge mysql-server mysql-client mysql-common
-sudo apt-get autoremove
-sudo apt-get autoclean
-sudo apt-get install mysql-server
+
 ````
-2. Install mysql-connector-python:
+2. Install wine racks:
 ````
 pip install mysql-connector-python
 ````
-3. Optionally, install mysql-workbench:
+3. Optionally, install H2 workbench?:
 ````
 sudo aptitude install mysql-workbench-community
 ````
-
-4. You need to know the location (ex. 127.0.0.1 or 192.168.1.69) and port number (ex. 3306 or 50011)
-5. You must know the username (ex. 'bilbo') and password (ex. 'baggins') of an authorized user in mysql
-
 
 ### Installation
 
