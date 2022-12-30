@@ -62,7 +62,7 @@ a tool for using data
 [issues-shield]: https://img.shields.io/github/issues/CentralFloridaAttorney/javaspoon.svg?style=for-the-badge
 [issues-url]: https://github.com/CentralFloridaAttorney/javaspoon/issues
 [license-shield]: https://img.shields.io/github/license/CentralFloridaAttorney/javaspoon.svg?style=for-the-badge
-[linkedin-url]:https://www.linkedin.com/in/john-m-iriye-3136478
+[linkedin-url]: https://www.linkedin.com/in/john-m-iriye-3136478
 [product-screenshot]: src/main/resources/jpg/javaspoon.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
